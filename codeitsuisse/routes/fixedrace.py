@@ -14,10 +14,8 @@ def evaluate():
     print(data)
     print(type(data))
     list_data = list(data.split(','))
-    string = ','
-    formation = random.shuffle(list_data)
-    print(formation)
-    return string.join(formation)
+    random.shuffle(list_data)
+    return ','.join(list_data)
     
     # logging.info("My result :{}".format(result))
     # return json.dumps(result)
