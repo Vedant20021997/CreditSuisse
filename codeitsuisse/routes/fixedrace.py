@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 def evaluate():
     data = request.get_data(as_text=True)
     list_data = list(data.split(','))
-    string = ''
+    string = ','
     formation = random.shuffle(list_data)
     return string.join(formation)
     
