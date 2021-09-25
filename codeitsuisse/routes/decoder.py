@@ -8,7 +8,7 @@ from codeitsuisse import app
 
 logger = logging.getLogger(__name__)
 
-@app.route('/fixedrace', methods=['POST'])
+@app.route('/decoder', methods=['POST'])
 def decode():
     data = request.get_json()
     print(data)
