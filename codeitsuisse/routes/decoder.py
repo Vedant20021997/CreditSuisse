@@ -11,8 +11,11 @@ logger = logging.getLogger(__name__)
 @app.route('/fixedrace', methods=['POST'])
 def decode():
     data = request.get_json()
+    print(data)
     possible_values = data["possible_values"]
+    print(possible_values)
     num_slots = data["num_slots"]
+    print(num_slots)
     return {"answer": random.choices(possible_values, k=num_slots)}
     
     # logging.info("My result :{}".format(result))
