@@ -9,7 +9,7 @@ from codeitsuisse import app
 logger = logging.getLogger(__name__)
 
 @app.route('/fixedrace', methods=['POST'])
-def evaluate():
+def decode():
     data = request.get_json()
     possible_values = data["possible_values"]
     num_slots = data["num_slots"]
