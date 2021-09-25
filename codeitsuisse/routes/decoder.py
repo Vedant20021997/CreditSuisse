@@ -19,7 +19,7 @@ def decode():
     #possible_values = ["e", "d", "f"]
     choice = random.choices(possible_values, k=num_slots)
     print(choice)
-    return jsonify({"answer": ["u", "v", "u", "f", "v"]})
+    return jsonify({"answer": choice})
     
     # logging.info("My result :{}".format(result))
     # return json.dumps(result)
