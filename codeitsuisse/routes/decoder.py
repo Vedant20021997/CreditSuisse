@@ -16,10 +16,10 @@ def decode():
     print(possible_values)
     num_slots = data["num_slots"]
     print(num_slots)
-    #possible_values = ["x","q","v","k", "c"]
+    possible_values = ["l","e","m","i", "d", "f"]
     choice = random.choices(possible_values, k=num_slots)
     print(choice)
-    return jsonify({"answer": ["q", "v", "q", "o", "z"]})
+    return jsonify({"answer": choice})
     
     # logging.info("My result :{}".format(result))
     # return json.dumps(result)
